@@ -16,14 +16,18 @@ build:
 
 requirements:
   host:
-    - python >=3.6,<4.0
+    - python
     - pip
-    - poetry-core
+  build:
+    - hatchling
+    - hatch-jupyter-builder
   run:
-    - python >=3.6,<4.0
+    - python
     - ipython
     - jinja2
     - pandas
+    - typing_extensions
+    - requests
 
 test:
   imports:
@@ -42,4 +46,3 @@ about:
 extra:
   recipe-maintainers:
     - gabrielcnr
-
